@@ -1,0 +1,253 @@
+/* Contains styles for signup-page 'img' and 'form'  */
+
+.SignupMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot-img-container {
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  overflow: hidden;
+  box-shadow: -12px 12px 4px #61afef;
+  margin: 5rem 8rem 10rem 10rem;
+}
+
+.robot-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.signup-form-container {
+  width: 25rem;
+  height: 30rem;
+  margin: 3rem 10rem 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+@media (max-width: 1550px) {
+  .robot-img-container {
+    margin: 5rem 5rem 10rem 5rem;
+  }
+
+  .signup-form-container {
+    margin: 3rem 5rem 10rem 5rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .robot-img-container {
+    margin: 5rem 2rem 10rem 2rem;
+  }
+
+  .signup-form-container {
+    margin: 3rem 2rem 10rem 2rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .SignupMainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .robot-img-container {
+    display: none;
+  }
+
+  .signup-form-container {
+    margin: 0;
+  }
+
+  .signup-form-container h2 {
+    font-size: 20px;
+  }
+  .signup-form-container form input {
+    width: 18rem;
+  }
+  .signup-form-container form button {
+    width: 18.4rem;
+  }
+  .signup-form-container form {
+    align-items: center;
+  }
+}
+
+.signup-form-container h2 {
+  color: #e5c07b;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 0;
+  text-align: center;
+}
+
+.signup-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signup-form-container form input {
+  background-color: #282c34;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  height: 2.8rem;
+  /* width: 25rem; */
+  font: inherit;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: larger;
+}
+
+.signup-form-container form input:hover {
+  cursor: text;
+}
+
+.signup-form-container form p {
+  color: #abb2bf;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.signup-form-container form button {
+  background-color: #282c34;
+  color: #98c379;
+  border: 1px solid #98c379;
+  margin-top: 2rem;
+  font: inherit;
+  cursor: pointer;
+  height: 2.8rem;
+  /* width: 25.4rem; */
+}
+
+.signup-form-container form button:hover {
+  color: #282c34;
+  background-color: #98c379;
+}
+
+/* login */
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 6rem 26rem 5rem 26rem;
+}
+
+.login-form-container {
+  width: 25rem;
+  height: 30rem;
+}
+
+.login-form-container h2 {
+  color: #e5c07b;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-form-container form input {
+  background-color: #282c34;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  height: 2.8rem;
+  width: 25rem;
+  font: inherit;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: larger;
+}
+
+.login-form-container form input:hover {
+  cursor: text;
+}
+
+.login-form-container form p {
+  color: #abb2bf;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.login-form-container form button {
+  background-color: #282c34;
+  color: #98c379;
+  border: 1px solid #98c379;
+  margin-top: 2rem;
+  font: inherit;
+  cursor: pointer;
+  height: 2.8rem;
+  width: 25.5rem;
+}
+
+.login-form-container form button:hover {
+  color: #282c34;
+  background-color: #98c379;
+}
+
+.account-icon {
+  border: 2px solid #61afef;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  color: #61afef;
+  background-color: #282c34;
+  font-size: 25px;
+  /* font-weight: 700; */
+}
+
+.account-icon:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: #61afef;
+  color: #282c34;
+}
+
+.nav-account-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-account-container div {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  color: #abb2bf;
+  padding-right: 10px;
+}
+.email:hover {
+  color: #61afef;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.error {
+  color: #e06c75;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+
+@media (max-width: 1099px) {
+  .email {
+    display: none;
+  }
+}

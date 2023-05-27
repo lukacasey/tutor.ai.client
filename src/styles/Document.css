@@ -1,0 +1,10 @@
+/* contains styles that apply to the entire document */
+
+:root {
+  --background-color: #282c34;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #282c34;
+}

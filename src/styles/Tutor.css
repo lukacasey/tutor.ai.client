@@ -1,0 +1,192 @@
+.tutor-container {
+  margin: 0 auto;
+}
+
+.topping {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+}
+
+.topping p {
+  color: #c678dd;
+  font-size: 15px;
+  margin: 0px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #e06c75;
+  /* border: 2px solid #e06c75; */
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+input[type="radio"]:hover {
+  transform: scale(1.3);
+}
+
+input[type="radio"]:checked {
+  background-color: #98c379;
+  transform: scale(1.3);
+}
+
+.back-btn-container-tutor {
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.tips-title-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tips-title {
+  color: #e5c07b;
+}
+
+.tips-container {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  /* margin: 0 auto; */
+}
+
+.tips-container img {
+  width: 14%;
+  cursor: pointer;
+  align-self: center;
+}
+
+.tip3 {
+  /* position: absolute;
+  top: 289px;
+  left: 27px; */
+}
+
+.tip2 {
+  /* position: absolute;
+  top: 119px;
+  right: 22px; */
+}
+
+.tip1 {
+  /* position: absolute;
+  bottom: 80px;
+  right: 12px; */
+}
+
+.tip1:hover {
+  scale: 1.3;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tip2:hover {
+  scale: 1.3;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tip3:hover {
+  scale: 1.3;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.account-heading-wrapper {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #61afef;
+}
+
+.cs-button--attachment {
+  display: none;
+}
+
+@media (min-width: 1351px) {
+  .cs-main-container {
+    margin: 0rem 5rem 0rem 5rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .cs-main-container {
+    width: 60rem;
+  }
+
+  .tutor-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .tips-title-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cs-main-container {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cs-main-container {
+    width: 40rem;
+  }
+
+  .login-wrapper {
+    margin: 0;
+  }
+
+  .login-form-container form input {
+    height: 2.8rem;
+    width: 17rem;
+  }
+
+  .login-form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-form-container form button {
+    height: 2.8rem;
+    width: 17.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  #root {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  .cs-main-container {
+    width: 100%;
+  }
+
+  .topping {
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .tips-container {
+    flex-direction: column;
+  }
+
+  .tips-container img {
+    margin: 0.8rem;
+  }
+}
